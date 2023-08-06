@@ -90,7 +90,18 @@ body {
 }
 
 .card-image {
+    overflow: hidden;
     border-radius: var(--border-radius);
+}
+
+.card-image:hover {
+    background: no-repeat center url("./images/icon-view.svg"), var(--clr-primary-200);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card-image img:hover {
+    opacity: .5;
 }
 
 .card-description {
@@ -98,11 +109,16 @@ body {
     line-height: 1.5;
 }
 
-.card-description h1,
-.item-number {
+.card-description h1 {
     color: var(--clr-neutral-400);
     font-size: var(--fs-600);
     font-weight: var(--fw-semibold);
+}
+
+.card-description h1:hover,
+.card-description h1:focus-visible {
+    color: var(--clr-primary-200);
+    cursor: pointer;
 }
 
 .card-description p {
@@ -133,4 +149,10 @@ body {
 
 .item-holder {
     color: var(--clr-neutral-400);
+}
+
+.item-holder:hover,
+.item-holder:focus-visible {
+    color: var(--clr-primary-200);
+    cursor: pointer;
 }
