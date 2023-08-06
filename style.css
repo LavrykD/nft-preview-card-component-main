@@ -101,7 +101,7 @@ body {
 }
 
 .card-image img:hover {
-    opacity: .5;
+    opacity: .2;
 }
 
 .card-description {
